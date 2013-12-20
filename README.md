@@ -35,7 +35,7 @@ You'll be prompted to provide a license key, which is contained in the email you
 
 ## Next Steps
 ### Shell Access
-You can ssh into any bowery service by running
+You can ssh into any bowery service by running:
 ```
 bowery ssh <name>
 ```
