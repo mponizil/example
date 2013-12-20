@@ -1,0 +1,9 @@
+{
+  "api": {
+    "type": "node",
+    "path": "/Users/david/Code/Bowery/testApp"
+  },
+  "database": {
+    "type": "mongo"
+  }
+}
