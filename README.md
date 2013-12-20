@@ -37,7 +37,7 @@ You can ssh into any bowery service by running:
 bowery ssh <name>
 ```
 
-## Inter-Service Communication
+## Environmental Variables
 In order to communicate from one service to another, Bowery injects ip addresses as environmental variables. So the `web-client` service's ip address and port can be accessed at `$WEB_CLIENT_ADDR`. Spaces and dashes are converted to underscores and the name is uppercase.
 
 ## Support
