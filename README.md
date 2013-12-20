@@ -35,7 +35,10 @@ You'll be prompted to provide a license key, which is contained in the email you
 
 ## Next Steps
 ### Shell Access
-You can ssh into any bowery service by running `bowery ssh <name>`.
+You can ssh into any bowery service by running
+```
+bowery ssh <name>
+```
 
 ### Inter-Service Communication
 In order to communicate from one service to another, Bowery injects ip addresses as environmental variables. So the `web-client` service's ip address and port can be accessed at `$WEB_CLIENT_ADDR`. Spaces and dashes are converted to underscores and the name is uppercase.
