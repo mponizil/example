@@ -34,7 +34,7 @@ bowery connect
 You'll be prompted to provide a license key, which is contained in the email you were sent. Within your terminal, Bowery will send the URL (*.boweryapps.com) that your project is running on. As you make changes to your project, they will be reflected instantly at that URL, and any logs your application produces will be streamed to the terminal.
 
 
-Need help getting set up? Email us at help@bowery.io and we'll make sure we get you set up. Found a bug? Email us at bugs@bowery.io and we'll fix it right away.
+Need help getting set up? Found a bug? Email us at team@bowery.io and we'll fix it right away.
 
 We've completely rewritten Bowery from the ground up to be even better, and we hope you agree.
 
