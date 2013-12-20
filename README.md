@@ -34,6 +34,10 @@ bowery connect
 You'll be prompted to provide a license key, which is contained in the email you were sent. Within your terminal, Bowery will send the URL (*.boweryapps.com) that your project is running on. As you make changes to your project, they will be reflected instantly at that URL, and any logs your application produces will be streamed to the terminal.
 
 ## Next Steps
+### Shell Access
+You can ssh into any bowery service by running `bowery ssh <name>`.
+
+### Inter-Service Communication
 In order to communicate from one service to another, Bowery injects ip addresses as environmental variables. So the `web-client` service's ip address and port can be accessed at `$WEB_CLIENT_ADDR`. Spaces and dashes are converted to underscores and the name is uppercase.
 
 ## Support
