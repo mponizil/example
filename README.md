@@ -29,7 +29,7 @@ When you're within the directory of the project you're working on, simply run:
 ```
 bowery connect
 ```
-You'll be prompted to provide a license key, which is contained in the email you were sent. Within your terminal, Bowery will send the URL (*.boweryapps.com) that your project is running on. As you make changes to your project, they will be reflected instantly at that URL, and any logs your application produces will be streamed to the terminal.
+You'll be prompted to provide a license key, which is contained in the email you were sent. Within your terminal, Bowery will send the URL (`SERVICE.APPID.boweryapps.com`) that your project is running on. As you make changes to your project, they will be reflected instantly at that URL, and any logs your application produces will be streamed to the terminal.
 
 ## Shell Access
 You can ssh into any bowery service by running:
