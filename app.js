@@ -6,7 +6,7 @@
 var express = require('express')
 var http = require('http')
 var path = require('path')
-var db = require('monk')(process.env.DATABASE_ADDR + '/sumall')
+var db = require('monk')(process.env.DATABASE_ADDR + '/db')
 
 var redis = require('redis')
 var app = express()
