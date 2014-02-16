@@ -29,12 +29,12 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function (req, res) {
-  res.send("Bowery Connect Test App!!!!!!")
+  res.send('Bowery Connect Test App!!!!!!')
 })
 
 app.get('/test', function (req, res) {
   db.get('test').insert({hello: 'World'})
-  res.send("hello World!")
+  res.send('hello World!')
 })
 
 app.get('/dump', function (req, res) {
@@ -57,7 +57,7 @@ app.get('/env', function (req, res) {
 })
 
 app.get('/healthz', function (req, res) {
-  res.send("ok")
+  res.send('ok')
 })
 
 app.listen(3000)
