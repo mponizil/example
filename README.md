@@ -7,18 +7,19 @@ curl download.bowery.io | sh
 ```
 
 ## Config
-Bowery applications are comprised of services (e.g. web-client, database, cache, pubsub, etc.), the specifications of which are detailed in a bowery.json file located in the base of your project directory. Bowery current supports the following services: node.js, MongoDB, Redis, and MySQL.
+Bowery applications are comprised of services (e.g. web-client, database, cache, pubsub, etc.), the specifications of which are detailed in a bowery.json file located in the base of your project directory. You can run `bowery search <name>` to find available services.
+
 ```
 {
   "web-client": {
-    "type": "node", // the required software
+    "image": "thebyrd/node@0.10.22", // the required software
     "path": "/Users/you/my-sample-app", // the absolute path to your files
   },
   "db": {
-    "type": "mongo"
+    "image": "thebyrd/mongodb@2.4.9"
   },
   "cache": {
-    "type": "redis",
+    "image": "thebyrd/redis@2.8.6",
     "config": "/path/to/conf" // any additional configuration
   }
 }
