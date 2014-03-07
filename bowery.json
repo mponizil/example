@@ -1,9 +1,9 @@
 {
   "api": {
-    "image": "thebyrd/node@0.10.22",
+    "image": "node",
     "path": "."
   },
   "database": {
-    "image": "thebyrd/mongodb@2.4.9"
+    "image": "mongo"
   }
 }
