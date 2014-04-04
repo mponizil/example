@@ -1,7 +1,9 @@
 {
   "api": {
     "image": "node",
-    "path": "."
+    "path": ".",
+    "start": "node app.js",
+    "build": "npm install"
   },
   "database": {
     "image": "mongodb"
