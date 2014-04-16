@@ -1,11 +1,5 @@
 ![trusted testers] (https://s3.amazonaws.com/uploads.hipchat.com/66105/460623/2szY20cWEjqxsQ6/bowery_logos%402x.png)
 
-## Install
-Bowery has a few prerequisites: [node.js](http://nodejs.org/), [Homebrew](http://brew.sh/), and [Git](https://help.github.com/articles/set-up-git). As long as you have those, you can install Bowery by running the following command in your Terminal:
-```
-curl download.bowery.io | sh
-```
-
 ## Config
 Bowery applications are comprised of services (e.g. web-client, database, cache, pubsub, etc.), the specifications of which are detailed in a bowery.json file located in the base of your project directory. You can run `bowery search <name>` to find available services.
 
@@ -14,6 +8,8 @@ Bowery applications are comprised of services (e.g. web-client, database, cache,
   "web-client": {
     "image": "thebyrd/node@0.10.22", // the required software
     "path": "/Users/you/my-sample-app", // the absolute path to your files
+    "start": "node app.js", // start command
+    "build": "npm install" // build command
   },
   "db": {
     "image": "thebyrd/mongodb@2.4.9"
@@ -41,7 +37,9 @@ bowery ssh <name>
 ## Environmental Variables
 In order to communicate from one service to another, Bowery injects ip addresses as environmental variables. So the `web-client` service's ip address and port can be accessed at `$WEB_CLIENT_ADDR`. Spaces and dashes are converted to underscores and the name is uppercase.
 
-## Support
+## Questions
+If you have any more questions or need any reference, head over to docs.bowery.io.
+
 Need help getting set up? Found a bug? Email us at team@bowery.io and we'll fix it right away.
 
 We've completely rewritten Bowery from the ground up to be even better, and we hope you agree.
